@@ -1,0 +1,4 @@
+{
+    //Entender qual o ambiente estou trabalhando e converter as feature que o ambiente entende
+    "presets": ["@babel/preset-env"]
+}
