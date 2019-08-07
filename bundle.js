@@ -1,82 +1,59 @@
+"use strict";
+
 // *** Vetor ***
-const arr = [1, 2, 3, 4, 5, 6, 7];
-
-const newArr = arr.map(function(item) {
-    return item * 2;
+var arr = [1, 2, 3, 4, 5, 6, 7];
+var newArr = arr.map(function (item) {
+  return item * 2;
 });
+console.log(newArr); //Para cada execuï¿½ï¿½o ï¿½ pego o valor total do retorno + next
 
-console.log(newArr);
-
-//Para cada execução é pego o valor total do retorno + next
-const sum = arr.reduce(function(total, next){
-    return total + next;
-})
-
-//0
+var sum = arr.reduce(function (total, next) {
+  return total + next;
+}); //0
 //1
-
 //1
 //2
-
 //3
 //3
-
 //6
 //4
-
 //10
 //5
-
 //15
 //6
-
 //21
 //7
-
 //Resultado: 28
 
 console.log(sum);
-
-const filter = arr.filter(function(item) {
-    return item % 2 === 0; //Condição deve sempre retornar true or false
+var filter = arr.filter(function (item) {
+  return item % 2 === 0; //Condiï¿½ï¿½o deve sempre retornar true or false
 });
-
 console.log(filter);
-
-const find = arr.find(function(item) {
-    return item === 2;
+var find = arr.find(function (item) {
+  return item === 2;
 });
-
-console.log(find);
-
-// *** Class ***
-
+console.log(find); // *** Class ***
 // class List {
 //     constructor(){
 //         this.data = [];
 //     }
-
 //     add(data) {
 //         this.data.push(data);
 //         console.log(data);
 //     }
 // }
-
 // class TodoList extends List {
 //     constructor(){
 //         super();
 //         this.usuario = 'Renato';
 //     }
-
 //     mostraUsuario() {
 //         console.log(this.usuario);
 //     }
 // }
-
 // const MinhaLista = new TodoList();
-
 // document.getElementById('novotodo').onclick = function() {
 //     MinhaLista.add('Novo todo');
 // }
-
 // MinhaLista.mostraUsuario();
